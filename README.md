@@ -1,3 +1,3 @@
-# Grind75
-Repo for solutions from Grind 75 study plan
-https://www.techinterviewhandbook.org/grind75
+# Leetcode 75 
+Repo for solutions from Leetcode 75 study plan
+Solved in JavaScript

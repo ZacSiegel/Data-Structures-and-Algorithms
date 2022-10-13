@@ -5,4 +5,4 @@ class Solution:
             if i in lookup:
                 return i
             else:   
-                adict[i] = 1 
+                lookup[i] = 1 

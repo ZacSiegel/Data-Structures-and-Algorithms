@@ -1,4 +1,4 @@
-<!-- https://leetcode.com/problems/search-in-rotated-sorted-array/ -->
+// https://leetcode.com/problems/search-in-rotated-sorted-array/ 
 
 function search(nums: number[], target: number): number {
     let left: number = 0

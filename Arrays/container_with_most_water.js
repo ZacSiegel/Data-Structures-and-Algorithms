@@ -20,6 +20,9 @@ const maxArea = (height) => {
         // if they're equal, move pointer that goes to larger height
         // this part can also be omitted because it doesn't matter
         // where the pointer goes to if the two heights are equal
+        // this is because of below:
+        // you perform left++ or right--, because if h[left] == h[right], neither (left+1, right) or (left, right-1) 
+        // can be potential solutions because the area obtained is necessarily smaller than the current two pointers
         } else {
             Math.max(height[right-1], height[left + 1]) === height[right-1] ? right-- : left++
         }

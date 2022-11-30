@@ -10,5 +10,5 @@ const removeDuplicates = (str) => {
             stack.pop();
         }
     }
-    return stack.join('')
+    return stack.join('');
 };

@@ -8,7 +8,7 @@ const insert = (intervals, newInterval) => {
 		// if new interval end is before the current element without overlapping
     		// we simply add it to the beginning of the intervals list
 		if(newInterval[1] < intervals[i][0]){
-			res.push(newInterval)
+			res.push(newInterval);
             // merge [newInterval] and [intervals]
             // => [[newInterval], [intervals]]
 			return res.concat(intervals.slice(i))
@@ -30,6 +30,6 @@ const insert = (intervals, newInterval) => {
 	// have our newInterval updated/merged but we haven't placed it into the original intervals list
   	// this means that the end of the newly merged interval is larger than any interval in the original intervals list
 
-	res.push(newInterval)
+	res.push(newInterval);
 	return res
 };

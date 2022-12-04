@@ -4,7 +4,7 @@
 // Example 1:
 // Input: sentence = "thequickbrownfoxjumpsoverthelazydog"
 // Output: true
-// Explanation: sentence contains at least one of every letter of the English alphabet.
+// Explanation: sentence contains at least one of every letter of the English alphabet
 
 
 const checkIfPangram = (sentence) => {

@@ -10,11 +10,11 @@ function searchMatrix(matrix: number[][], target: number): boolean {
             let mid:number = Math.floor((left + right) / 2);
             if(matrix[i][mid] === target) return true
             if(target > matrix[i][mid]){
-                left = mid + 1
+                left = mid + 1;
             } else {
-                right = mid - 1
-            }
-        }
-    }
-    return false
+                right = mid - 1;
+            };
+        };
+    };
+    return false;
 };

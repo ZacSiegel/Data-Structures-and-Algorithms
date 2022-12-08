@@ -8,7 +8,7 @@ function searchMatrix(matrix: number[][], target: number): boolean {
         if(target > matrix[i][right]) continue
         while(left <= right){
             let mid:number = Math.floor((left + right) / 2);
-            if(matrix[i][mid] === target) return true
+            if(matrix[i][mid] === target) return true;
             if(target > matrix[i][mid]){
                 left = mid + 1;
             } else {

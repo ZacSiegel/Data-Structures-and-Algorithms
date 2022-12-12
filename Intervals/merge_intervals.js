@@ -5,10 +5,10 @@ const merge = (intervals) => {
     intervals.sort((a, b) => a[0] - b[0]);
     
     // start result arr with first interval after sorting
-    let result = [intervals[0]]
+    let result = [intervals[0]];
     
     for (let currInterval of intervals) {
-        let prevInterval = result[result.length - 1]
+        let prevInterval = result[result.length - 1];
         // [ [1,3],      [2,6],      [8,10],     [15,18]]   => res = [[1,3]]
         //   prevInt    currInt
         // if prevInt[1] (3) >=   currInt[0] (2)
@@ -21,7 +21,7 @@ const merge = (intervals) => {
         } else {
             // if prevInt[1] doesn't overlap with currInt[0]
             // we just add currInt to the results array
-            result.push(currInterval)
+            result.push(currInterval);
         }
     }
     return result

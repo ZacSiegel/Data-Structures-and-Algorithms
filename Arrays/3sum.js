@@ -31,5 +31,5 @@ const threeSum = (nums) => {
         }
 
     }
-    return result
+    return result;
 };

@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/insert-interval/
 
 const insert = (intervals, newInterval) => {
-	let res=[]
+	let res=[];
 
 	for(let i = 0; i < intervals.length; i++){
 
